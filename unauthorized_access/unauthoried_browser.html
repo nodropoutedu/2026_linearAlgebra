@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Unauthorized Access</title>
+    <style>
+      body {
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+        color: #444;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        max-width: 400px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        font-size: 2em;
+        margin-top: 0;
+        color: #ff0000;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <script>
+      // disable right click
+      document.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+      });
+    
+    </script>
+    
+    <div class="container">
+      <h1>Unauthorized Access</h1>
+      <p>Seems like you are not authorized to view this page.</p>
+    </div>
+  </body>
+</html>

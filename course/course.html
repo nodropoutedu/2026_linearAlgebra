@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>NoDropout - Linear Algebra & Graph Theory</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+	<script>
+
+      // check if the user is authenticated
+      if (sessionStorage.getItem("authenticated") !== "true") {
+        // if not, redirect to index.html
+        window.location.href = "../index.html"
+      }
+
+const userAgent = navigator.userAgent.toLowerCase();
+console.log("User Agent: ", userAgent); // <-- Add this to debug
+
+
+
+      // disable right click
+      document.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+      });
+  
+	</script>
+
+
+<!-- partial:index.partial.html -->
+<h2>Linear Algebra & Graph Theory 2025</h2>
+<ul class="accordion-menu">
+  <li>
+    <div class="dropdownlink"><i class="fa fa-play" aria-hidden="true"></i> Videos
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <ul class="submenuItems">
+      <li><a href="../subjects/LTI/Exercise01.html">Lecture + Exercise 1</a></li>
+      <li><a href="../subjects/LTI/Lecture02.html">Lecture 2</a></li>
+      <li><a href="../subjects/LTI/Exercise02.html">Exercise 2</a></li>
+      <li><a href="../subjects/LTI/basis.html">Basis of R</a></li>
+      <li><a href="../subjects/LTI/Lecture03.html">Lecture + Exercise 3</a></li>
+      <li><a href="../subjects/LTI/Lecture0401.html">Lecture + Exercise 4.1</a></li>
+      <li><a href="../subjects/LTI/Lecture0402.html">Lecture + Exercise 4.2</a></li>
+      <li><a href="../subjects/LTI/Lecture0501.html">Lecture + Exercise 5.1</a></li>
+      <li><a href="../subjects/LTI/Lecture0502.html">Lecture + Exercise 5.2</a></li>
+      <li><a href="../subjects/LTI/gaussian.html">Gaussian Algorithom</a></li>
+      <li><a href="../subjects/LTI/determinant.html">Matrix Determinants</a></li>
+      <li><a href="../subjects/LTI/map.html">Linear Map</a></li>
+      <li><a href="../subjects/LTI/graph.html">Graph Theory</a></li>
+      <li><a href="../subjects/LTI/eu.html">Eulerian Cycle</a></li>
+      <li><a href="../subjects/LTI/ham.html">Hamilton Cycle</a></li>
+      <li><a href="../subjects/LTI/exam.html">Exam Preparation 1</a></li>
+      <li><a href="">Previous year exam solve part 2 will be available soon</a></li>	    
+<!--       <li><a href="../subjects/LTI/exam.html" target="_blank" >EXAM PREPARATION</a></li>
+ -->
+    </ul>
+  <!-- </li>
+  <li>
+    <div class="dropdownlink"><i class="fa fa-file" aria-hidden="true"></i> Files
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <ul class="submenuItems">
+      <li><a href="#">1. Fundamentals of Logistics </a></li>
+      <li><a href="#">2. Production Logistics and others</a></li>
+      <li><a href="#">History book 3</a></li>
+      <li><a href="#">1. Fundamentals of Logistics </a></li>
+      <li><a href="#">2. Production Logistics and others</a></li>
+      <li><a href="#">History book 3</a></li>
+      <li><a href="#">1. Fundamentals of Logistics </a></li>
+      <li><a href="#">2. Production Logistics and others</a></li>
+      <li><a href="#">History book 3</a></li>
+      <li><a href="#">1. Fundamentals of Logistics </a></li>
+      <li><a href="#">2. Production Logistics and others</a></li>
+      <li><a href="#">History book 3</a></li>
+    </ul>
+  </li> -->
+  <!-- <li>
+    <div class="dropdownlink"><i class="fa fa-rocket" aria-hidden="true"></i> CHEAT SHEET Preparation
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <ul class="submenuItems">
+
+    </ul>
+  </li> -->
+  <!-- <li>
+    <div class="dropdownlink"><i class="fa fa-plus" aria-hidden="true"></i> Additional Materials
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <ul class="submenuItems">
+      <li><a href="#">Action book 1</a></li>
+      <li><a href="#">Action book 2</a></li>
+    </ul>
+  </li> -->
+</ul>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
