@@ -1,0 +1,80 @@
+
+  
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gaussian Algorithom</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+  <style>
+    body {
+      background: #f4f4f4;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+    video {
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 12px;
+    }
+    .plyr__control[aria-label="Download"] {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <script>
+
+
+    // check if the user is authenticated
+    if (sessionStorage.getItem("authenticated") !== "true") {
+      // if not, redirect to index.html
+      window.location.href = "../index.html"
+    }
+
+const userAgent = navigator.userAgent.toLowerCase();
+console.log("User Agent: ", userAgent); // <-- Add this to debug
+
+
+
+    // disable right click
+    document.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+    });
+  
+  </script>
+  <video id="video" controls playsinline preload="auto" oncontextmenu="return false">    <source src="https://justgoodsa.blob.core.windows.net/news-images/Linear Algebra _ Lecture 7 _ Gaussian Algorithm.mp4" type="video/mp4" />
+  </video>
+
+  <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+  <script>
+    const video = document.getElementById('video');
+
+    video.addEventListener('canplay', () => {
+      const player = new Plyr(video, {
+        controls: [
+          'play',
+          'progress',
+          'current-time',
+          'mute',
+          'volume',
+          'settings',
+          'fullscreen'
+        ],
+        settings: ['speed'],
+        speed: {
+          selected: 1,
+          options: [0.5, 1, 1.25, 1.5, 2]
+        }
+      });
+
+      // Disable right click
+      video.addEventListener('contextmenu', e => e.preventDefault());
+      video.addEventListener('dragstart', e => e.preventDefault());
+    });
+  </script>
+</body>
+</html>
